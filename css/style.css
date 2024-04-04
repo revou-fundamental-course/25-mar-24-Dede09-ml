@@ -1,0 +1,148 @@
+body {
+    font-family: Calibri;
+}
+
+header {
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+.headdesc{
+    text-align: justify center;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    display: flex;
+}
+
+.container {
+    /* background-color: lightgoldenrodyellow; */
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.formBMI {
+    padding: 10px;
+    max-height: 100%;
+    max-width: 50%;
+    flex: 49.9%;
+}
+
+.barrier {
+    background-color: darkgray;
+    flex: 0.2%
+}
+
+.resultBMI {
+    padding: 10px;
+    max-height: 100%;
+    max-width: 50%;
+    flex: 49.9%;
+    text-align: justify;
+
+}
+
+.container-input {
+    text-align: left;
+    background-color: lightgray;
+    display: flex;
+    height: 18em;
+    padding: 10px;
+    gap: 20px;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    color: black;
+}
+
+.labelradio{
+    cursor: pointer;
+}
+
+#weight, #age, #height {
+    width: 97%;
+    height: 1.7em;
+    border-radius: 5px;
+    border: none; 
+} 
+
+.container-detail {
+    padding: 5px;
+    text-align: justify;
+}
+
+
+.container-result {
+    text-align: center;
+    background-color: lightgray;
+    padding: 6px;
+    height: 10em;
+    width: 40%;
+    border-radius: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+
+
+}
+
+.suggestbox {
+    padding: 10px;
+    height: 10em;
+    text-align: justify;
+}
+
+.consultation {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.btn {
+    background-color: rgb(59, 196, 217);
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#reset {
+    background-color: whitesmoke;
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#storepic {
+    width: 20%;
+}
+
+.disease {
+    width: 100%;
+    display: flex;
+    gap: 5%;
+    text-align: center;
+    justify-content: center;
+}
+
+.disease-content {
+    padding: 20px;
+    color: white;
+    border-radius: 80%;
+    text-align: center;
+}
+
+
+
+footer {
+    text-align: center;
+}
