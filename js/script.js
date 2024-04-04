@@ -85,8 +85,9 @@ function submitBMI() {
 
 }
 
+// function reset; mengosongkan semua nilai pada form
+
 function reset() {
-    // window.location = "/"
     pria.checked = false
     wanita.checked = false
     weight.value = ''

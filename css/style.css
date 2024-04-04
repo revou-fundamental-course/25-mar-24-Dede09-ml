@@ -252,7 +252,7 @@ a {
     opacity: 1;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 720px){
     .container{
         display:block;
     }
@@ -269,6 +269,25 @@ a {
     .disease-content {
         padding: 15px;
         font-size: 60%;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .headdesc {
+        text-align: justify;
+        display: flex;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .container-input {
+        width: 95%;;
+        margin-left: 0;
+    }
+
+    .container-result {
+        width: 95%;
+        margin-left: 0;
     }
 }
 
