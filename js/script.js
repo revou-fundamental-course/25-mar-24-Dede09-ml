@@ -8,7 +8,10 @@ let resultRange = document.getElementById("resultrange")
 let suggest = document.getElementById("suggest")
 let pria = document.getElementById("r1")
 let wanita = document.getElementById("r2")
+let additional = document.getElementById("additional")
 
+
+// untuk memilih jenis kelamin
 function checkedPria(){
     pria.checked = true
     wanita.checked = false
@@ -19,6 +22,8 @@ function checkedWanita(){
     pria.checked = false
     
 }
+
+//function ketika klik Hitung BMI, lalu akan tampil hasilnya
 
 function submitBMI() {
 
@@ -31,6 +36,7 @@ function submitBMI() {
     } else if(age.value == 0){
         alert("Data kosong: mohon input usia Anda")
     } else {
+        additional.style.display = "none"
         let heightConv = height.value / 100
         let BMI = (weight.value / (heightConv * heightConv)).toFixed(2)
         // BMI = 32

@@ -1,12 +1,62 @@
+
+
 body {
     font-family: Calibri;
+    background-color: darkslategrey;
 }
 
 header {
     display: block;
     text-align: center;
     justify-content: center;
+    background-color: darkslategrey;
+    color: whitesmoke;
 }
+
+/* navbar start */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+/* navbar end */
+
+footer {
+    text-align: center;
+    justify-content: center;
+    background-color: darkslategrey;
+    color: whitesmoke;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
 .headdesc{
     text-align: justify center;
     margin-left: 25%;
@@ -16,13 +66,35 @@ header {
 }
 
 .container {
-    /* background-color: lightgoldenrodyellow; */
+    background-color: white;
     display: flex;
     margin: 0;
     padding: 0;
     gap: 10px;
     max-height: 100%;
     max-width: 100%;
+}
+
+.container-rules {
+    background-color: white;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+    max-height: 100%;
+    max-width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+.container-contact {
+    background-color: white;
+    display: block;
+    margin: 0;
+    padding: 10px;
+    gap: 10px;
+    max-height: 100%;
+    max-width: 100%;
+    justify-content: left;
 }
 
 .formBMI {
@@ -126,6 +198,11 @@ header {
     width: 20%;
 }
 
+#bmipic {
+    width: 35%;
+    padding: 20px;
+}
+
 .disease {
     width: 100%;
     display: flex;
@@ -139,10 +216,12 @@ header {
     color: white;
     border-radius: 80%;
     text-align: center;
+    opacity: 0.6;
+    transition: 0.3s;
+    
 }
 
-
-
-footer {
-    text-align: center;
+.disease-content:hover{
+    opacity: 1;
 }
+

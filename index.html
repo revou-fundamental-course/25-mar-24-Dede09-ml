@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <!-- Title page -->
+    <!-- Header page -->
     <header>
         <h1>BMI Calculator</h1>
         <p class="headdesc">Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang
@@ -17,6 +17,14 @@
             Bagaimana denganmu? Yuk hitung sekarang di Kalkulator BMI.
         </p>
     </header>
+
+    <!-- Navbar -->
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rules.html">Rules</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <!-- <li style="float:right"><a class="active" href="#about">About</a></li> -->
+    </ul>
 
     <!-- Content Web -->
     <div class="container">
@@ -88,6 +96,7 @@
             </div>
 
             <div class="suggestbox">
+                <p id="additional">Keterangan: -</p>
                 <p id="resultrange"></p>
                 <p id="suggest"></p>
             </div>
@@ -103,21 +112,35 @@
 
             <div class="consultation">
                 <h3>Beberapa penyakit yang berasal dari kegemukan</h3>
-
                 <div class="disease">
-                    <p id="disease1" class="disease-content" style="background-color: darkgreen;">Diabetes</p>
-                    <p id="disease2" class="disease-content" style="background-color: darkcyan;">Hipertensi</p>
-                    <p id="disease3" class="disease-content" style="background-color: lightsalmon;">Sakit Jantung</p>
-                    <p id="disease4" class="disease-content" style="background-color: darkgoldenrod;">Osteoarthritis</p>
+                    <a href="https://www.halodoc.com/kesehatan/diabetes" target="_blank">
+                        <p id="disease1" class="disease-content" style="background-color: darkgreen;">Diabetes</p>
+                    </a>
+                    <a href="https://www.halodoc.com/kesehatan/hipertensi" target="_blank">
+                        <p id="disease2" class="disease-content" style="background-color: darkcyan;">Hipertensi</p>
+                    </a>
+                    <a href="https://www.halodoc.com/kesehatan/jantung" target="_blank">
+                        <p id="disease3" class="disease-content" style="background-color: lightsalmon;">Sakit Jantung</p>
+                    </a>
+                    <a href="https://www.halodoc.com/kesehatan/osteoarthritis" target="_blank">
+                        <p id="disease4" class="disease-content" style="background-color: darkgoldenrod;">Osteoarthritis</p>
+                    </a>
                 </div>
+                <i style="font-size: 10px;">*klik untuk penjelasan penyakit lebih lanjut</i>
 
-                <br />
-                <button class="btn">Konsultasi Dokter Via Aplikasi</button>
-                <button class="btn">Registrasi Online Sekarang</button>
                 <div>
                     <br />
-                    <img id="storepic" src="./assets/images/App-Store.png">
-                    <img id="storepic" src="./assets/images/Google-Play.png">
+                    <button class="btn">Konsultasi Dokter Via Aplikasi</button>
+                    <button class="btn">Registrasi Online Sekarang</button>
+                </div>
+                <div>
+                    <br />
+                    <a href="https://apps.apple.com/id/app/halodoc-doctors-medicines/id1067217981" target="_blank">
+                        <img id="storepic" src="./assets/images/App-Store.png">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.linkdokter.halodoc.android&hl=en&gl=US&pli=1" target="_blank">
+                        <img id="storepic" src="./assets/images/Google-Play.png">
+                    </a>
                 </div>
             </div>
         </div>
