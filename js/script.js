@@ -39,10 +39,12 @@ function submitBMI() {
         additional.style.display = "none"
         let heightConv = height.value / 100
         let BMI = (weight.value / (heightConv * heightConv)).toFixed(2)
-        // BMI = 32
         lowBMI = Math.floor(BMI)
         highBMI = Math.ceil(BMI)
         resultNumber.innerHTML = BMI
+        resultNumber.className = "gradient" 
+        resultNumber.style.fontSize = "4.6em"
+
 
         if (lowBMI == highBMI) {
             resultRange.innerHTML = `Hasil BMI adalah ${BMI}`
@@ -92,6 +94,9 @@ function reset() {
     height.value = ''
     resultTitle.innerHTML = `<i style="color:darkgray">Berat Badan Lebih/Kurang</i>`
     resultNumber.innerHTML = 0
+    resultNumber.style.fontSize = "20px"
+    resultNumber.style.color = "black"
+    resultNumber.className =""
     resultRange.innerHTML = ""
     resultDesc.innerHTML = `<i style="color:darkgray">kondisi berat badan</i>`
     suggest.innerHTML = ""

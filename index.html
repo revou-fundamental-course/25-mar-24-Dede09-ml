@@ -28,7 +28,7 @@
 
     <!-- Content Web -->
     <div class="container">
-        <div class="formBMI">
+        <section class="formBMI">
             <h2>Form BMI</h2>
 
             <!-- bagian form input -->
@@ -53,7 +53,7 @@
                     <input id="height" type="number" name="tinggibadan">
                 </div>
                 <div>
-                    <button class="btn" onclick="submitBMI()">Hitung BMI</button>
+                    <button id="calc" class="btn" onclick="submitBMI()">Hitung BMI</button>
                     <button id="reset" onclick="reset()">Reset</button>
                 </div>
             </div>
@@ -78,19 +78,17 @@
             </div>
 
 
-        </div>
+        </section>
 
-        <div class="barrier">
+        <div class="barrier"></div>
 
-        </div>
-
-        <div class="resultBMI">
+        <section class="resultBMI">
             <h2>Hasil</h2>
 
             <!-- Tampilan hasil dari perhitungan -->
             <div class="container-result">
                 <p id="resulttitle"><i style="color:darkgray">Berat Badan Lebih/Kurang</i></p>
-                <p id="resultnumber">0</p>
+                <strong id="resultnumber" style="font-size: 20px;">0</strong>
                 <p id="resultdesc"><i style="color:darkgray">kondisi berat badan</i></p>
                 <button class="btn">Download Hasil BMI</button>
             </div>
@@ -143,7 +141,7 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </section>
 
 
 
